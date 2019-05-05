@@ -1,0 +1,22 @@
+.wrapper {
+	margin: 0 30%;
+	margin-top: 20vh;
+	text-align: center;
+	background-color: rgb(0,0,0,0.15);
+	border-radius: 10px;
+}
+input, button {
+	font-size: 120%;
+}
+button {
+	font-weight: bold;
+	background-color: rgb(0,0,0,0.9);
+	color: white;
+	text-align: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.todolist {
+	min-height: 150px;
+	width: 50%;
+}
