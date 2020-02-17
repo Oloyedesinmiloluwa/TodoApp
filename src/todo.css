@@ -18,6 +18,7 @@ input, button {
 input {
 	border: none;
 	outline: none;
+	padding-left: 10px;
 }
 button {
 	font-weight: bold;

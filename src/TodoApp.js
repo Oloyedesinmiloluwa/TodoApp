@@ -12,7 +12,8 @@ class TodoApp extends Component {
 		this.setState({ inputText: event.target.value});
 	}
 
-	handleSubmit = () => {
+	handleSubmit = (e) => {
+		e.preventDefault();
 		const { items, inputText } = this.state;
 		this.setState(prevState => ({
 			noOfItems: prevState.noOfItems + 1 ,
@@ -26,8 +27,10 @@ class TodoApp extends Component {
 		return (
 		<div className="wrapper">
 			<h2> My Todo App </h2>
+			<form>
 			<input onChange={this.handleChange} onSubmit={() => {}} placeholder="Enter a new todo"/>
 			<button onClick = {this.handleSubmit} > + </button>
+			</form>
 			{items[0] ? <TodoList items = {items.sort((a,b) => b.id - a.id )} />
 			: <p style={{ textAlign: 'center', marginTop: '30px'}}>No items added yet, simply click the add button</p>}
 		</div>
